@@ -1,6 +1,8 @@
 //Importation des modules utilisés
 require("dotenv").config();
-const dbUrl = process.env.URI;
+const dbUrl =
+  process.env.URI ||
+  "mongodb+srv://lea:MEgwQpcuTF5smhw7@cluster0.0xnydzq.mongodb.net/?retryWrites=true&w=majority";
 const mongoose = require("mongoose");
 
 //Déclaration globale de mongoose
